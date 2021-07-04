@@ -27,9 +27,9 @@ public class SwaggerConfig {
 	}
 
 	private ApiInfo getInfo() {
-		Contact contact = new Contact("Bashir Janbalat", "https://www.facebook.com/", "Arabprogrammer3030@gmail.com");
+		Contact contact = new Contact("Arabprogrammer", "https://www.facebook.com/", "Arabprogrammer3030@gmail.com");
 		return new ApiInfo("Spring Boot CRUD Project With Swagger", "Product Controller", "0.1", "https://Terms-of-service/",
-				contact, "Licence to  Bashir Janbalat", "https://Licence/", new ArrayList<>());
+				contact, "Licence to Arabprogrammer", "https://Licence/", new ArrayList<>());
 	}
 	
 }
