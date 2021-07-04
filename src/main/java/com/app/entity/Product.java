@@ -6,15 +6,21 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name = "product")
 public class Product {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@ApiModelProperty(name = "id",value = "the id of Product",example = "1")
     private int id;
+	@ApiModelProperty(name = "name",value = "the name of Product",required = true,example = "Coca cola")
     private String name;
+	@ApiModelProperty(name = "quantity",value = "the quantity of Product",required = true,example = "200")
     private int quantity;
+	@ApiModelProperty(name = "price",value = "the price of Product",required = true,example = "5.99")
     private double price;
     
 	public Product() {
